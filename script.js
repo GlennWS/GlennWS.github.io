@@ -34,12 +34,3 @@ document
     observer.observe(el);
   });
 
-// ── Contact form handler (demo) ──────────────────────────────
-function handleSubmit(e) {
-  e.preventDefault();
-  const status = document.getElementById('form-status');
-  status.textContent = "✓ Message received — I'll be in touch soon!";
-  status.style.display = 'block';
-  e.target.reset();
-  setTimeout(() => { status.style.display = 'none'; }, 5000);
-}
